@@ -1,0 +1,30 @@
+for i in range(int(input())):
+    A,B,C,D = map(int,input().split())
+    L = [A,B,C]
+    #print(L)
+    v =0
+    n=0
+    while( 1 ):
+        v=0
+
+        if ( len(L) ==0 ):
+            break
+      
+        n=n+1
+        T=[]
+        
+        for j in range(len(L)):
+            
+            if ( v+L[j] <= D ):
+                T.append(L[j] )
+                v=v+L[j]
+                
+        
+                
+        for j in T:
+            L.remove(j)
+            
+    print(n)
+            
+            
+   
